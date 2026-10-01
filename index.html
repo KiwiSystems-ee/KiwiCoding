@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KiwiCoding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-mark">🥝</span>
+        <span class="logo-text">KiwiCoding</span>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+      <nav class="lesson-list">
+        <a href="#" class="lesson-item active" data-lesson="0">1. Hello, World</a>
+        <a href="#" class="lesson-item locked" data-lesson="1">2. Styling Text</a>
+        <a href="#" class="lesson-item locked" data-lesson="2">3. Colors & Boxes</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <section class="lesson-panel">
+        <h1 id="lesson-title">Hello, World</h1>
+        <p id="lesson-body">HTML is made of <strong>tags</strong>. A tag looks like this: <code>&lt;h1&gt;</code>. The <code>h1</code> tag makes a big heading.</p>
+        <p class="task" id="lesson-task">Your task: add an <code>&lt;h1&gt;</code> tag that says <em>Hello, World</em>.</p>
+      </section>
+
+      <section class="editor-panel">
+        <textarea class="editor" id="editor" spellcheck="false">&lt;h1&gt;Hello, World&lt;/h1&gt;</textarea>
+      </section>
+
+      <section class="preview-panel">
+        <iframe class="preview" id="preview" title="preview"></iframe>
+      </section>
+    </main>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
